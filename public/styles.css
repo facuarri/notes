@@ -1,0 +1,168 @@
+*{
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+   font-family: 'Montserrat Alternates', sans-serif;
+}
+
+body{
+    background: #ffe;
+}
+
+header{
+    color: #f9f9f9;
+    background: rgb(29, 155, 240);
+    padding: 18px 30px;
+    box-shadow: 0 0 10px 0 rgba(1, 90, 163, 1);
+}
+
+header h1{
+    font-family: 'Comic Neue', cursive;
+}
+
+form{
+    position: relative;
+    width: 480px;
+    max-width: 90%;
+    text-align: center;
+    margin: 50px auto;
+    border:1px solid #fff;
+    border-radius: 10px;
+    background: #fff;
+    padding: 10px;
+    box-shadow: 0px 0px 8px 1px rgb(108, 109, 109);
+}
+
+form input,
+form textarea{
+    display: block;
+    margin: auto;
+    width: 100%;
+    resize: none;
+    border: none;
+    outline: none;
+    font-size: 1.2rem;
+    padding: 5px;
+    margin: 8px 0px;
+}
+
+form button{
+    position: absolute;
+    bottom: -20px;
+    right: 25px;
+    border: 1px solid rgb(141, 194, 243);
+    border-radius: 100%;
+    background: rgb(29, 155, 240);
+    width: 40px;
+    height: 40px;
+    color: #fff;
+    font-size: 0.8rem;
+    cursor: pointer;
+}
+
+form i{
+    font-size: 16px;
+}
+
+.note-container{
+    padding: 0 100px 40px;
+    text-align: center;
+}
+
+.note{
+    width: 280px;
+    background: #fff;
+    margin: 0px 10px 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 8px 1px rgb(108, 109, 109);
+    padding: 25px;
+    display: inline-block;
+    position: relative;
+    overflow-wrap: break-word;
+}
+
+.note h1{
+    font-size: 1.2rem;
+    text-align: left;
+    margin-bottom: 25px;
+}
+
+.note p{
+    font-size: 1rem;
+    text-align: left;
+    margin-bottom: 25px;
+}
+
+.note button{
+    position: absolute;
+    bottom: 5px;
+    right: 10px;
+    border: none;
+    color: rgb(29, 155, 240);
+    background: #fff;
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.confirmDialogContainer{
+    position: fixed;    
+    top:0;
+    left:0;
+    bottom:0;
+    right:0;
+    background: rgba(0,0,0,0.3);
+    z-index: 1;
+    overflow: hidden;
+}
+
+.confirmDialog{
+    background: #fff;
+    width: 380px;
+    margin: auto;
+    margin-top: 80px;
+    padding: 30px 65px;
+    border-radius: 10px;
+    box-shadow: 0px 1px 7px;
+}
+
+.confirmDialog h1, .confirmDialog p{
+    margin-bottom: 15px;
+}
+
+.confirmDialog button{
+    margin: 3px 10px;
+    width: 80px;
+    padding: 8px 15px;
+    text-align: center;
+    border: 1px solid rgb(29, 155, 240);
+    border-radius: 10px;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.btnNo{
+    background: #fff;
+}
+
+.btnYes{
+    background: rgb(29, 155, 240);
+    color: #fff;
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+    background: #ffe;
+    color: rgb(29, 155, 240);
+    width: 100%;
+    text-align: center;
+    padding: 15px 0;
+    font-weight: bolder;
+}
+
+@media screen and (max-width: 500px){
+    .note-container{
+        padding: 0 0 40px;
+    }
+}
